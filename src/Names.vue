@@ -1,15 +1,14 @@
 <template>
-  <div>
-   <h1>{{ title }}</h1>
-   <names></names>
-  </div>
+  <ul>
+    <li v-for="name in names">{{ name }}</li>
+  </ul>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      title: 'My First Vue.js App'
+      names: ['John', 'Jimmy', 'Mark', 'Michael']
     }
   }
 }
